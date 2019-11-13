@@ -29,7 +29,7 @@ class TasksController < ApplicationController
       title: params[:task][:title],
       description: params[:task][:description]
       })
-      task.save
-      redirect_to "/tasks/#{task.id}"
+    task.save
+    redirect_to "/tasks/#{task.id}"
   end
 end
